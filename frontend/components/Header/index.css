@@ -1,0 +1,99 @@
+.headerWrap {
+    margin: 2rem 4rem 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 12%;
+    height: 5%;
+}
+
+.nav {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headerNavLinkHome {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    text-decoration-line: none;
+    color: #ff6060;
+}
+
+.headerNavLinkHome:hover {
+    text-decoration-line: underline;
+}
+
+.headerNavLinkAbout {
+    margin-left: 10%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    text-decoration-line: none;
+    color: #ff6060;
+}
+
+.headerNavLinkAbout:hover {
+    text-decoration-line: underline;
+}
+
+
+
+/*-------------------------------------------*/
+/*Media queries for mobiles*/
+
+@media (max-width: 480px) {
+    .headerWrap {
+            margin: 1rem 2rem 0 2rem;
+        }
+        .logo {
+            width: 46%;
+            height: 10%;
+        }
+        .headerNav {
+            width: 50%;
+            text-transform: uppercase;
+        }
+        .headerNavLinkHome {
+            font-size: 12px;
+        }
+        .headerNavLinkAbout {
+            font-size: 12px;
+        }
+}
+
+
+/*-----------------------------------------------*/
+/*Media queries for tabs*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+.headerWrap {
+        margin: 1rem 2rem 0 2rem;
+    }
+    .logo {
+        width: 26.7%;
+        height: 8%;
+    }
+    .headerNav {
+        width: 40%;
+    }
+    .headerNavLinkHome {
+        font-size: 16px;
+    }
+    .headerNavLinkAbout {
+        font-size: 16px;
+    }
+}
