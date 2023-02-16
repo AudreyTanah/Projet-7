@@ -51,8 +51,6 @@
 }
 
 
-
-/*-------------------------------------------*/
 /*Media queries for mobiles*/
 
 @media (max-width: 480px) {
@@ -75,8 +73,6 @@
         }
 }
 
-
-/*-----------------------------------------------*/
 /*Media queries for tabs*/
 
 @media (min-width: 481px) and (max-width: 768px) {
