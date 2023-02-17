@@ -2,14 +2,18 @@ import { BrowserRouter} from "react-router-dom"
 import './App.css';
 import Routes from "./router"
 import Header from "./components/Header";
-// import Footer from "./components/Footer"
+import Banner from "./components/Banner";
+import Cards from "./components/Card";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header/>
+      <Header />
+      <Banner />
+      <Cards />
         <Routes />
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }

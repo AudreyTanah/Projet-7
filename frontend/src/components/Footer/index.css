@@ -1,0 +1,17 @@
+.footerContainer {
+background-color: black;
+height: 200px;
+text-align: center;
+padding-top: 20px;
+}
+
+.textFooterContainer {
+    color: white;
+}
+
+.footerContainer svg {
+}
+
+.footerContainer svg path {
+    fill: white;
+}

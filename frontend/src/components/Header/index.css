@@ -3,29 +3,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .logo {
-    width: 12%;
-    height: 5%;
+    width: 210px;
+    height: 68px;
 }
 
-.nav {
+.headerNav {
     width: 40%;
     display: flex;
     justify-content: flex-end;
 }
 
 .headerNavLinkHome {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 142.6%;
-    display: flex;
-    align-items: flex-end;
-    text-align: right;
-    text-decoration-line: none;
-    color: #ff6060;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 142.6%;
+display: flex;
+align-items: flex-end;
+text-align: right;
+color: #FF6060;
+text-decoration: none;
 }
 
 .headerNavLinkHome:hover {
@@ -34,7 +35,7 @@
 
 .headerNavLinkAbout {
     margin-left: 10%;
-    font-family: "Montserrat";
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -42,27 +43,31 @@
     display: flex;
     align-items: flex-end;
     text-align: right;
-    text-decoration-line: none;
-    color: #ff6060;
+    color: #FF6060;
+    text-decoration: none;
 }
-
 .headerNavLinkAbout:hover {
     text-decoration-line: underline;
 }
 
 
-/*Media queries for mobiles*/
-
+/*Media queries Mobiles*/
 @media (max-width: 480px) {
     .headerWrap {
-            margin: 1rem 2rem 0 2rem;
-        }
+        margin-left: 20px;
+        width: 100%;
+    }
+    .headerWrapFig {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+ 
         .logo {
-            width: 46%;
-            height: 10%;
+            width: 145px;
         }
         .headerNav {
-            width: 50%;
+            width: 140px;
+            margin-right: 10px;
             text-transform: uppercase;
         }
         .headerNavLinkHome {
@@ -70,21 +75,25 @@
         }
         .headerNavLinkAbout {
             font-size: 12px;
+            margin-left: 10px;
         }
 }
 
-/*Media queries for tabs*/
-
+/*Media queries Tablettes*/
 @media (min-width: 481px) and (max-width: 768px) {
 .headerWrap {
-        margin: 1rem 2rem 0 2rem;
+   margin-left: 20px;
+}
+
+    .headerWrapFig {
+        margin-left: 0px;
     }
     .logo {
-        width: 26.7%;
-        height: 8%;
+       width: 145px;
+       left: 0%;
     }
     .headerNav {
-        width: 40%;
+        width: 100%;
     }
     .headerNavLinkHome {
         font-size: 16px;
