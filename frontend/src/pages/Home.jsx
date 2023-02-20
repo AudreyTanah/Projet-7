@@ -1,9 +1,13 @@
-/*import Banner from "../../components/Banner/index"
-import assetBannerHome from "../../components/assets/bannerHome.png"
-/*import Card from "../../components/Card/index"*/
+import Banner from "../components/Banner"
+import Card from "../components/Card"
 
 function Home() {
-    return 
+    return (
+        <>
+            <Banner />
+            <Card />
+        </>
+    )
 }
 
 export default Home
