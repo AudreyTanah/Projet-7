@@ -1,13 +1,12 @@
-import ImgBannerAbout from "../assets/backgroundAbout.png"
+import AboutBanner from "../components/AboutBanner"
 import Collapse from "../components/Collapse/index"
 
 
 function About() {
     return (
-        <div>
-            
-            <img src={ImgBannerAbout} title="" alt="Illustration d'une montagne" />
-        <div className={"collapse"}>
+        < div className="aboutWrap">
+        < AboutBanner />
+        <div className="collapse">
         <Collapse
             title="Fiabilité"
             content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."

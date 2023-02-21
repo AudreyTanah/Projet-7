@@ -1,0 +1,27 @@
+.aboutBannerImg {
+    border-radius: 25px;
+    width: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+    height: 100%;
+}
+.cardBannerImg {
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+    position: relative;
+   }
+    
+.aboutBanner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+
+

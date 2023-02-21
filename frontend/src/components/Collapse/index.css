@@ -1,0 +1,33 @@
+.containerCollapse {
+    margin-left: 10%;
+    margin-right: 10%; 
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.titleCollapse {
+    background-color: #FF6060;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentCollapse {
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    color:#FF6060;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.iconOpen {
+    transform: rotate(180deg);
+    transition: transform 3s ease-in-out;
+
+}
