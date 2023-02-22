@@ -1,9 +1,12 @@
-export function Error() {
-  return (
-      <div>
-          erreur
-      </div>
-  )
+import Error from "../components/Error"
+
+function ErrorPage() {
+    return (
+        <>
+            <Error />
+        </>
+    )
 }
 
-export default Error
+export default ErrorPage
+

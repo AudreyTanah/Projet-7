@@ -28,7 +28,7 @@
 
 /*Animations Icon*/
 .iconOpen {
-    animation: spin-icon-open 0.3gis ease-in-out;
+    animation: spin-icon-open 0.3s ease-in-out;
 }
 
 @keyframes spin-icon-open {

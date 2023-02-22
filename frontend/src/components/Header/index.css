@@ -1,104 +1,92 @@
 .headerWrap {
-    margin: 2rem 4rem 0 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+  margin: 2rem 4rem 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
-    width: 210px;
-    height: 68px;
+  width: 210px;
+  height: 68px;
 }
 
 .headerNav {
-    width: 40%;
-    display: flex;
-    justify-content: flex-end;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .headerNavLinkHome {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 142.6%;
-display: flex;
-align-items: flex-end;
-text-align: right;
-color: #FF6060;
-text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #ff6060;
+  text-decoration: none;
 }
 
 .headerNavLinkHome:hover {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .headerNavLinkAbout {
-    margin-left: 10%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 142.6%;
-    display: flex;
-    align-items: flex-end;
-    text-align: right;
-    color: #FF6060;
-    text-decoration: none;
+  margin-left: 10%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #ff6060;
+  text-decoration: none;
 }
 .headerNavLinkAbout:hover {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
-
 
 /*Media queries Mobiles*/
 @media (max-width: 480px) {
-    .headerWrap {
-        margin-left: 20px;
-        width: 100%;
-    }
-    .headerWrapFig {
-        margin-left: 0px;
-        margin-right: 20px;
-    }
- 
-        .logo {
-            width: 145px;
-        }
-        .headerNav {
-            width: 140px;
-            margin-right: 10px;
-            text-transform: uppercase;
-        }
-        .headerNavLinkHome {
-            font-size: 12px;
-        }
-        .headerNavLinkAbout {
-            font-size: 12px;
-            margin-left: 10px;
-        }
+  .headerWrap {
+    margin: 10px;
+  }
+
+  .logo {
+    width: 145px;
+  }
+  .headerNav {
+    width: 140px;
+    margin-right: 10px;
+    text-transform: uppercase;
+  }
+  .headerNavLinkHome {
+    font-size: 12px;
+  }
+  .headerNavLinkAbout {
+    font-size: 12px;
+    margin-left: 10px;
+  }
 }
 
 /*Media queries Tablettes*/
 @media (min-width: 481px) and (max-width: 768px) {
-.headerWrap {
-   margin-left: 20px;
-}
+  .headerWrap {
+    margin: 10px;
+  }
 
-    .headerWrapFig {
-        margin-left: 0px;
-    }
-    .logo {
-       width: 145px;
-       left: 0%;
-    }
-    .headerNav {
-        width: 100%;
-    }
-    .headerNavLinkHome {
-        font-size: 16px;
-    }
-    .headerNavLinkAbout {
-        font-size: 16px;
-    }
+  .logo {
+    width: 145px;
+    left: 0%;
+  }
+
+  .headerNavLinkHome {
+    font-size: 16px;
+  }
+  .headerNavLinkAbout {
+    font-size: 16px;
+  }
 }

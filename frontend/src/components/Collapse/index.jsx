@@ -16,7 +16,7 @@ function Collapse({ title, content }) {
         </section>
     ) : (
     <div className="containerCollapse">
-        <div className={"titleCollapse"} onClick={() => setIsOpen(true)}>
+        <div className="titleCollapse" onClick={() => setIsOpen(true)}>
         {title}
         <img src={iconCollapse} className="iconClose" alt="icône Collapse" />
         </div>
