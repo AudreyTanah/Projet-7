@@ -1,10 +1,10 @@
-import { useState } from "react"
+/*import { useState } from "react"*/
 import { Link } from "react-router-dom"
-import Lodgings from "../../data/lodgings.json"
+import lodgings from "../../data/lodgings.json"
 import "../Card/index.css"
 
 function Card() {
-    const [lodgings] = useState(Lodgings)//Lodgings appelés dans l'import du fichier lodgings.json
+    /*const [lodgings] = useState(Lodgings)//Lodgings appelés dans l'import du fichier lodgings.json*/
     return (
     <section className="allCards">
         {lodgings.map((lodging) => (

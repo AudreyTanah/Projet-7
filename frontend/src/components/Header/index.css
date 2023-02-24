@@ -52,12 +52,13 @@
 /*Media queries Mobiles*/
 @media (max-width: 480px) {
   .headerWrap {
-    margin: 10px;
+    margin: 20px;
   }
-
+  
   .logo {
     width: 145px;
   }
+
   .headerNav {
     width: 140px;
     margin-right: 10px;
@@ -80,7 +81,6 @@
 
   .logo {
     width: 145px;
-    left: 0%;
   }
 
   .headerNavLinkHome {
