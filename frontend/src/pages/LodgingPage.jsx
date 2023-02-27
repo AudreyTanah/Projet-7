@@ -1,4 +1,4 @@
-import Carroussel from "../components/Carroussel"
+import Carrousel from "../components/Carrousel"
 import lodgings from "../data/lodgings.json"
 import {useParams} from "react-router-dom"
 import Error from "../components/Error"
@@ -17,7 +17,7 @@ function LodgingPage () {
     return (
         <>
         {foundLodging.pictures.length > 1 
-        ? < Carroussel pictures={foundLodging.pictures}  />
+        ? < Carrousel pictures={foundLodging.pictures}  />
         :<img src={foundLodging.pictures[0]}  alt="logement"/>
         }     
         </>

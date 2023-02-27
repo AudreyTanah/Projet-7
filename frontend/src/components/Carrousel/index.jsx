@@ -1,7 +1,9 @@
 import { useState } from "react";
-import "../Carroussel/index.css";
+import LeftArrow from "../svg/LeftArrow";
+import RightArrow from "../svg/RightArrow";
+import "./index.css";
 
-function Carroussel({ pictures }) {
+function Carrousel({ pictures }) {
   const [img, setImg] = useState({
     src: pictures[0],
     index: 0,
@@ -31,15 +33,15 @@ function Carroussel({ pictures }) {
   }
 
   return (
-    <section className="imgCarroussel">
-      <button onClick={prevImg}>précédent</button>
-      <img src={img.src} alt="logement" />
-      <button onClick={nextImg}>suivant</button>
-      <p>
+    <section className="containerCarrousel">
+      <button className="leftArrow" onClick={prevImg}><LeftArrow /></button>
+      <button className="rightArrow" onClick={nextImg}><RightArrow /></button>
+      <img className="imgCarrousel" src={img.src} alt="logement" />
+      <p className="index">
         {img.index + 1}/{pictures.length}
       </p>
     </section>
   );
 }
 
-export default Carroussel;
+export default Carrousel;

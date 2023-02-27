@@ -1,0 +1,50 @@
+.containerCarrousel {
+  border-radius: 25px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  height: 25%;
+}
+
+.imgCarrousel {
+  object-fit: cover;
+  height: 415px;
+  width: 100%;
+}
+
+.containerCarrousel svg {
+  width: 48px;
+  height: 48px;
+}
+
+.containerCarrousel svg path {
+  fill: #fff;
+}
+
+.leftArrow,
+.rightArrow {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 40%;
+}
+
+.rightArrow {
+  left: 92%;
+}
+
+.index {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    color: white;
+}
+
+/*Media queries Mobiles*/
+@media (max-width: 768px) {
+  .rightArrow {
+    left: 85%;
+  }
+}
