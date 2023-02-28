@@ -42,6 +42,43 @@
     color: white;
 }
 
+.titleLodging {
+  position: relative;
+  color: #FF6060;
+  font-size: 36px;
+}
+
+.location, .hostName {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500; 
+}
+
+.hostName {
+  width: 88px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hostPicture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+}
+
+.wrapHostNameAndPicture {
+  display: flex;
+}
+
+
+.containerInformation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
 /*Media queries Mobiles*/
 @media (max-width: 768px) {
   .rightArrow {
