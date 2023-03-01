@@ -1,11 +1,10 @@
 import { useState } from "react";
 import LeftArrow from "../svg/LeftArrow";
 import RightArrow from "../svg/RightArrow";
-import Tags from "../Tags";
 import "./index.css";
 
 
-function Carrousel({ pictures, title, location, hostName, hostPicture }) {
+function Carrousel({ pictures}) {
   /*Props pictures dans LodgingPage.jsx*/
   const [img, setImg] = useState({
     /*initialisation du state*/ src: pictures[0],
@@ -19,7 +18,7 @@ function Carrousel({ pictures, title, location, hostName, hostPicture }) {
     }
 
     setImg({
-      /*méthode pour changer le state*/ src: pictures[nextIndex],
+      src: pictures[nextIndex],/*méthode pour changer le state*/ 
       index: nextIndex,
     });
   }
@@ -48,18 +47,7 @@ function Carrousel({ pictures, title, location, hostName, hostPicture }) {
       <p className="index">
         {img.index + 1}/{pictures.length}
       </p>
-      <div className="containerInformation"> 
-      <div className="wrapTitleLodgingAndLocation">
-      <div className="titleLodging">{title}</div> 
-      <div className="location">{location}</div> 
-      </div>
-      <div className="wrapHostNameAndPicture">
-      <div className="hostName">{hostName}</div> 
-      <img className="hostPicture" src={hostPicture} alt="profilPicture" />
-      </div> 
-      </div>
-      <div className="tags"><Tags />
-        </div>       
+      
       </section>
   );
 }
