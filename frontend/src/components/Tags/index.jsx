@@ -1,7 +1,9 @@
-export default function Tags(props) {
+export default function Tags({tags}) {
 	return (
 		<div className="containerTag">
-			<span className="buttonTag">{props.tag}</span>
+			{tags.map((tag) => {
+				return <span className="buttonTag">{tag}</span>
+			})}
 		</div>
 	);
 }
