@@ -1,6 +1,6 @@
 import Carrousel from "../../components/Carrousel";
 import Tags from "../../components/Tags";
-import Ratings from "../../components/Ratings";
+import Rating from "../../components/Rating";
 import lodgings from "../../data/lodgings.json";
 import { useParams } from "react-router-dom";
 import Error from "../../components/Error";
@@ -37,8 +37,10 @@ function LodgingPage() {
           />
         </div>
       </div>
+      <div className="wrapperTagsAndRating">
       <Tags tags={foundLodging.tags} />
-      <Ratings ratings={foundLodging.ratings} />
+      <Rating rating={foundLodging.rating} />
+      </div>
       </div>
       
   );

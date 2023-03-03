@@ -2,13 +2,14 @@
     border-radius: 25px;
     width: 100%;
     opacity: 0.8;
+    filter: brightness(75%);
     object-fit: cover;
     height: 100%;
 }
 .cardImg {
     border-radius: 25px;
     background: rgba(0, 0, 0, 0.7);
-    filter: brightness(75%);
+
     margin-top: 30px;
     margin-left: 5%;
     margin-right: 5%;
