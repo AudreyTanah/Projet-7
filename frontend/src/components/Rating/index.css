@@ -1,3 +1,12 @@
 .containerRating {
-   margin-right: 5%;
+margin-top: 20px;
+width: 180px;
+display: flex;
+justify-content: flex-end;
 }
+
+.star {
+   margin-left: 10px;
+}
+
+

@@ -12,7 +12,7 @@
   }
   
   .hostName {
-    width: 88px;
+    width: 70px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -25,6 +25,7 @@
   
   .wrapHostNameAndPicture {
     display: flex;
+    justify-content: flex-end;
   }
   
   
@@ -33,12 +34,9 @@
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 60px;
   }
 
-  .wrapperTagsAndRating {
-    display: flex;
-    justify-content: space-between;
-  }
 
   /*Pour l'image seule*/
   .containerImageSolo {
@@ -56,6 +54,29 @@
     width: 100%;
   }
 
-  #text {
-    margin-left: 20px;
+
+  @media (max-width: 768px) {
+    .containerInformation {
+      display: inherit;
+    }
+
+    .wrapHostNamePictureAndRating {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      justify-content: space-between;
+      
+    }
+
+    .containerCollapse {
+      margin-left: 5%;
+      margin-right: 5%;
+
+    }
+
+
+  
   }
+

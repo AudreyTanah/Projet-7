@@ -27,11 +27,15 @@ function LodgingPage() {
         </div>
       )}
       <div className="containerInformation">
+        <div className="wrapTitlePlaceAndTags">
         <div className="wrapTitleLodgingAndLocation">
           <h1 className="titleLodging">{foundLodging.title}</h1>
           <div className="location">{foundLodging.location}</div>
         </div>
-        <div className="wrapHostNameAndPicture">
+      <Tags tags={foundLodging.tags} />
+      </div>
+      <div className="wrapHostNamePictureAndRating">
+      <div className="wrapHostNameAndPicture">
           <div className="hostName">{foundLodging.host.name}</div>
           <img
             className="hostPicture"
@@ -39,11 +43,10 @@ function LodgingPage() {
             alt="profilPicture"
           />
         </div>
-      </div>
-      <div className="wrapperTagsAndRating">
-      <Tags tags={foundLodging.tags} />
       <Rating rating={foundLodging.rating} />
       </div>
+      </div>
+
       <div className="wrapperCollapses">
     <Collapse
     title="Description"
@@ -51,13 +54,10 @@ function LodgingPage() {
     <Collapse 
     title="Equipements"
     content={foundLodging.equipments.map((info, index) => {
-      return <div key={`${foundLodging.equipments}-${index}`}>{info}</div>
+      return <div key={index}>{info}</div>
     })} />
     </div>
     </div>
-    
-    
-      
   );
 }
 

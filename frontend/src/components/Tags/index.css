@@ -1,7 +1,5 @@
 .containerTag {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 5%;
+    margin-top: 27px;
 }
 
 .tag {
@@ -22,7 +20,15 @@
 @media (max-width: 480px) {
     .tag {
         width: 84px;
-        height: 18px;  
+        height: 18px;
+        margin-top: 10px;  
     }
+
+    .containerTag {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
 }
 
