@@ -21,7 +21,9 @@ function LodgingPage() {
       {foundLodging.pictures.length > 1 ? (
         <Carrousel pictures={foundLodging.pictures} />
       ) : (
-        <img src={foundLodging.pictures[0]} alt="logement" />
+        <div className="containerImageSolo">
+        <img className="imageWithoutIndex" src={foundLodging.pictures[0]} alt="logement" />
+        </div>
       )}
       <div className="containerInformation">
         <div className="wrapTitleLodgingAndLocation">

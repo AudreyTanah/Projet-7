@@ -39,3 +39,19 @@
     display: flex;
     justify-content: space-between;
   }
+
+  /*Pour l'image seule*/
+  .containerImageSolo {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    height: 25%; 
+  }
+  .imageWithoutIndex {
+    border-radius: 25px;
+    object-fit: cover;
+    height: 415px;
+    width: 100%;
+  }

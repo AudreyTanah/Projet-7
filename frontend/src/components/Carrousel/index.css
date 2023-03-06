@@ -1,5 +1,4 @@
 .containerCarrousel {
-  border-radius: 25px;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 30px;
@@ -9,6 +8,7 @@
 }
 
 .imgCarrousel {
+  border-radius: 25px;
   object-fit: cover;
   height: 415px;
   width: 100%;
