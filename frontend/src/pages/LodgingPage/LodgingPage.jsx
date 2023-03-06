@@ -5,6 +5,7 @@ import lodgings from "../../data/lodgings.json";
 import { useParams } from "react-router-dom";
 import Error from "../../components/Error";
 import "./LodgingPage.css";
+import Collapse from "../../components/Collapse";
 
 function LodgingPage() {
   const { id } = useParams(); /*useParams dans l'url*/
@@ -43,7 +44,19 @@ function LodgingPage() {
       <Tags tags={foundLodging.tags} />
       <Rating rating={foundLodging.rating} />
       </div>
-      </div>
+      <div className="wrapperCollapses">
+    <Collapse
+    title="Description"
+    content={foundLodging.description} />
+    <Collapse 
+    title="Equipements"
+    content={foundLodging.equipments.map((info, index) => {
+      return <div key={`${foundLodging.equipments}-${index}`}>{info}</div>
+    })} />
+    </div>
+    </div>
+    
+    
       
   );
 }

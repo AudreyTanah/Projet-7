@@ -5,7 +5,7 @@ import  "../Collapse/index.css"
 function Collapse({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
     return isOpen ? (
-        <section className="allCollapses">
+        <section className="collapse">
         <div className="containerCollapse">
             <div className="titleCollapse" onClick={() => setIsOpen(false)}>
             {title}
