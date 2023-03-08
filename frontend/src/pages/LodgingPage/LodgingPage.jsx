@@ -47,11 +47,11 @@ function LodgingPage() {
       </div>
       </div>
 
-      <div className="wrapperCollapses">
-    <Collapse
+    <div className="wrapperCollapses">
+    <Collapse 
     title="Description"
     content={foundLodging.description} />
-    <Collapse 
+    <Collapse
     title="Equipements"
     content={foundLodging.equipments.map((info, index) => {
       return <div key={index}>{info}</div>

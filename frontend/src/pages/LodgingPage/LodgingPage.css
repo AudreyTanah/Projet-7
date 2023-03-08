@@ -12,7 +12,7 @@
   }
   
   .hostName {
-    width: 70px;
+    width: 80px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -54,11 +54,22 @@
     width: 100%;
   }
 
+  /*Adaptation Composant Collapse pour LodgingPage*/
+  .wrapperCollapses {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 5%;
+    gap: 20px;
+  }
+
+  .wrapperCollapses .containerCollapse {
+    max-width: 582px;
+  } 
 
   @media (max-width: 768px) {
     .containerInformation {
       display: inherit;
-    }
+  }
 
     .wrapHostNamePictureAndRating {
       display: flex;
@@ -70,13 +81,13 @@
       
     }
 
-    .containerCollapse {
-      margin-left: 5%;
-      margin-right: 5%;
-
+    .wrapperCollapses {
+      flex-direction: column;
+      align-items: center;
     }
+  }
 
 
   
-  }
+  
 

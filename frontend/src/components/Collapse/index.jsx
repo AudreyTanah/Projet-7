@@ -3,7 +3,7 @@ import iconCollapse from "../../assets/icon-collapse.svg"
 import  "../Collapse/index.css"
 
 function Collapse({ title, content }) {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)//C'est à dire fermé état initial
     return isOpen ? (
         <section className="collapse">
         <div className="containerCollapse">
