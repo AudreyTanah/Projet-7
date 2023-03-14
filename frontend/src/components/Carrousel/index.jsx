@@ -3,21 +3,20 @@ import LeftArrow from "../svg/LeftArrow";
 import RightArrow from "../svg/RightArrow";
 import "./index.css";
 
-function Carrousel({ pictures }) {
-  /*Props pictures dans LodgingPage.jsx*/
-  const [img, setImg] = useState({
-    /*initialisation du state*/ src: pictures[0],
-    index: 0,
-  });
+function Carrousel({ pictures }) {//Props pictures dans LodgingPage.jsx
+  const [img, setImg] = useState({//Nommage img - point de départ du useState
+    //initialisation du state
+    src: pictures[0],
+    index: 0, //Commence à 0, si je veux le dernier index, il faut que je fasse -1
+  });         //à la longueur du tableau
 
-  function prevImg() {
-    let nextIndex = img.index - 1; /*Pour connaître la fin du tableau -1*/
-    if (nextIndex < 0) {
-      nextIndex = pictures.length - 1;
+  function prevImg() {//Précédente image = prevImg
+    let nextIndex = img.index - 1;//Revient en arrière
+    if (nextIndex < 0) {          
+      nextIndex = pictures.length - 1;//donc le bon index du tableau
     }
-
-    setImg({
-      src: pictures[nextIndex] /*méthode pour changer le state*/,
+    setImg({/*méthode pour changer le state*/
+      src: pictures[nextIndex],
       index: nextIndex,
     });
   }

@@ -1,6 +1,6 @@
 import "../Tags/index.css";
 
-function Tags({ tags }) {
+function Tags({ tags }) {//Props tags dans LodgingPage.jsx
   return (
     <div className="containerTag">
       {tags.map((tag) => {

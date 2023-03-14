@@ -19,8 +19,8 @@ function LodgingPage() {
   }
   return (
     <div className="wrapper">
-      {foundLodging.pictures.length > 1 ? (
-        <Carrousel pictures={foundLodging.pictures} />
+      {foundLodging.pictures.length > 1 ? (//Si sup. à 1 (car plusieurs photos dans tableau pictures lodgings.json) me retourne le Carroussel
+        <Carrousel pictures={foundLodging.pictures} />//sinon l'image solo pas le composant pour éviter l'index et Arrow
       ) : (
         <div className="containerImageSolo">
           <img
