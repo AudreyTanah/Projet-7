@@ -11,10 +11,10 @@ function Carrousel({ pictures }) {//Props pictures dans LodgingPage.jsx
   });         //à la longueur du tableau
 
   function prevImg() {//Précédente image = prevImg
-    let nextIndex = img.index - 1;//Revient en arrière
-    if (nextIndex < 0) {          
-      nextIndex = pictures.length - 1;//donc le bon index du tableau
-    }
+    let nextIndex = img.index - 1;//Revient en arrière - nextIndex contient la variable de l'index suivant
+    if (nextIndex < 0) {//car en dessous de 0, y'a plus rien et comme on lui a assigné -1 - ça veut dire qu'il est au début         
+      nextIndex = pictures.length - 1;//donc dans ce cas de figure nextIndex (variable réassignée)
+    }                                 //au -1, à l'image précedente donc comme ça l'index et la length ont la même longueur
     setImg({/*méthode pour changer le state*/
       src: pictures[nextIndex],
       index: nextIndex,
@@ -43,7 +43,7 @@ function Carrousel({ pictures }) {//Props pictures dans LodgingPage.jsx
       </button>
       <img className="imgCarrousel" src={img.src} alt="logement" />
       <p className="index">
-        {img.index + 1}/{pictures.length}
+        {img.index + 1}/{pictures.length}{/*numéro index/longueur du tableau - juste pour l'affichage sur la page web tout simple*/}
       </p>
     </section>
   );
