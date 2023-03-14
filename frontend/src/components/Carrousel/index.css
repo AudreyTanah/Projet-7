@@ -28,7 +28,8 @@
   border: none;
   background: none;
   position: absolute;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .rightArrow {
@@ -36,15 +37,11 @@
 }
 
 .index {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  color: white;
 }
-
-
-
-
 
 /*Media queries Mobiles*/
 @media (max-width: 768px) {

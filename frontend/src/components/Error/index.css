@@ -1,34 +1,35 @@
 .errorWrap {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }
 
 .number404 {
-    color: white;
-    font-size: 288px;
-    text-align: center;
-    font-weight: 700;
-    margin: 0;
-    color:#FF6060;
-
+  color: white;
+  font-size: 288px;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+  color: #ff6060;
 }
 
 .textError {
-    color:#FF6060;
-    text-align: center; 
-    font-size: 36px;  
-    font-weight: 500;
+  color: #ff6060;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
 }
 
 .returnHome {
-    font-size: 18px;
-    color: #FF6060;
-    display: flex;
-    justify-content: center;
+  font-size: 18px;
+  color: #ff6060;
 }
 
 @media (max-width: 768px) {
-.number404 {
+  .number404 {
     font-size: 120px;
-}
+  }
 }

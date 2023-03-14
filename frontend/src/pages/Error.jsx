@@ -1,12 +1,11 @@
-import Error from "../components/Error"
+import Error from "../components/Error";
 
 function ErrorPage() {
-    return (
-        <>
-            <Error />
-        </>
-    )
+  return (
+    <>
+      <Error />
+    </>
+  );
 }
 
-export default ErrorPage
-
+export default ErrorPage;

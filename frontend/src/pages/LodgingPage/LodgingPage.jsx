@@ -23,40 +23,43 @@ function LodgingPage() {
         <Carrousel pictures={foundLodging.pictures} />
       ) : (
         <div className="containerImageSolo">
-        <img className="imageWithoutIndex" src={foundLodging.pictures[0]} alt="logement" />
+          <img
+            className="imageWithoutIndex"
+            src={foundLodging.pictures[0]}
+            alt="logement"
+          />
         </div>
       )}
       <div className="containerInformation">
         <div className="wrapTitlePlaceAndTags">
-        <div className="wrapTitleLodgingAndLocation">
-          <h1 className="titleLodging">{foundLodging.title}</h1>
-          <div className="location">{foundLodging.location}</div>
+          <div className="wrapTitleLodgingAndLocation">
+            <h1 className="titleLodging">{foundLodging.title}</h1>
+            <div className="location">{foundLodging.location}</div>
+          </div>
+          <Tags tags={foundLodging.tags} />
         </div>
-      <Tags tags={foundLodging.tags} />
-      </div>
-      <div className="wrapHostNamePictureAndRating">
-      <div className="wrapHostNameAndPicture">
-          <div className="hostName">{foundLodging.host.name}</div>
-          <img
-            className="hostPicture"
-            src={foundLodging.host.picture}
-            alt="profilPicture"
-          />
+        <div className="wrapHostNamePictureAndRating">
+          <div className="wrapHostNameAndPicture">
+            <div className="hostName">{foundLodging.host.name}</div>
+            <img
+              className="hostPicture"
+              src={foundLodging.host.picture}
+              alt="profilPicture"
+            />
+          </div>
+          <Rating rating={foundLodging.rating} />
         </div>
-      <Rating rating={foundLodging.rating} />
-      </div>
       </div>
 
-    <div className="wrapperCollapses">
-    <Collapse 
-    title="Description"
-    content={foundLodging.description} />
-    <Collapse
-    title="Equipements"
-    content={foundLodging.equipments.map((info, index) => {
-      return <div key={index}>{info}</div>
-    })} />
-    </div>
+      <div className="wrapperCollapses">
+        <Collapse title="Description" content={foundLodging.description} />
+        <Collapse
+          title="Equipements"
+          content={foundLodging.equipments.map((info, index) => {
+            return <div key={index}>{info}</div>;
+          })}
+        />
+      </div>
     </div>
   );
 }

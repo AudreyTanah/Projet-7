@@ -3,8 +3,7 @@ import LeftArrow from "../svg/LeftArrow";
 import RightArrow from "../svg/RightArrow";
 import "./index.css";
 
-
-function Carrousel({ pictures}) {
+function Carrousel({ pictures }) {
   /*Props pictures dans LodgingPage.jsx*/
   const [img, setImg] = useState({
     /*initialisation du state*/ src: pictures[0],
@@ -18,7 +17,7 @@ function Carrousel({ pictures}) {
     }
 
     setImg({
-      src: pictures[nextIndex],/*méthode pour changer le state*/ 
+      src: pictures[nextIndex] /*méthode pour changer le state*/,
       index: nextIndex,
     });
   }
@@ -47,8 +46,7 @@ function Carrousel({ pictures}) {
       <p className="index">
         {img.index + 1}/{pictures.length}
       </p>
-      
-      </section>
+    </section>
   );
 }
 

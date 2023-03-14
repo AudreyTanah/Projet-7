@@ -1,58 +1,54 @@
 .bannerImg {
-    border-radius: 25px;
-    width: 100%;
-    opacity: 0.8;
-    filter: brightness(75%);
-    object-fit: cover;
-    height: 100%;
+  border-radius: 25px;
+  width: 100%;
+  opacity: 0.8;
+  filter: brightness(75%);
+  object-fit: cover;
+  height: 100%;
 }
 .cardImg {
-    border-radius: 25px;
-    background: rgba(0, 0, 0, 0.7);
-    margin-top: 70px;
-    margin-bottom: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 100%;
-    position: relative;
-   }
-    
-.banner {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 70px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 100%;
+  position: relative;
+}
 
+.banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .textImg {
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-margin: 0px;
-white-space: nowrap;
-display: flex;
-color: #FFFFFF;
-z-index: 3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0px;
+  white-space: nowrap;
+  display: flex;
+  color: #ffffff;
+  z-index: 3;
 }
 
 /*Media queries Mobiles*/
 @media (max-width: 480px) {
-
-.textImg {
+  .textImg {
     font-size: 18px;
     white-space: normal;
-}
+  }
 }
 /*Media queries Tablettes*/
 @media (min-width: 481px) and (max-width: 768px) {
-    .textImg {
-   font-size: 24px;
-
-    }
-
+  .textImg {
+    font-size: 24px;
+  }
 }

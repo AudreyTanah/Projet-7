@@ -1,16 +1,27 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./index.css";
 
 function Nav() {
-	return (
-		<nav className="headerNav">
-			<Link to="/" className="headerNavLinkHome">
-				Accueil
-			</Link>
-			<Link to="/about" className="headerNavLinkAbout">
-				A Propos
-			</Link>
-		</nav>
-	);
+  return (
+    <nav className="headerNav">
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive ? "headerNavLinkHome active" : "headerNavLinkHome"
+        }
+      >
+        Accueil
+      </NavLink>
+      <NavLink
+        to="/about"
+        className={({ isActive }) =>
+          isActive ? "headerNavLinkAbout active" : "headerNavLinkAbout"
+        }
+      >
+        A Propos
+      </NavLink>
+    </nav>
+  );
 }
 
-export default Nav
+export default Nav;

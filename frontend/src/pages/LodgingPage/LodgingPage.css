@@ -1,93 +1,90 @@
 .titleLodging {
-    position: relative;
-    color: #FF6060;
-    margin: 0px;
-    font-size: 36px;
-  }
-  
-  .location, .hostName {
-    color: #FF6060;
-    font-size: 18px;
-    font-weight: 500; 
-  }
-  
-  .hostName {
-    width: 80px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .hostPicture {
-    width: 64px;
-    height: 64px;
-    border-radius: 50px;
-  }
-  
-  .wrapHostNameAndPicture {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  
+  position: relative;
+  color: #ff6060;
+  margin: 0px;
+  font-size: 36px;
+}
+
+.location,
+.hostName {
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hostName {
+  width: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hostPicture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+}
+
+.wrapHostNameAndPicture {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.containerInformation {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 60px;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+/*Pour l'image seule*/
+.containerImageSolo {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  height: 25%;
+}
+.imageWithoutIndex {
+  border-radius: 25px;
+  object-fit: cover;
+  height: 415px;
+  width: 100%;
+}
+
+/*Adaptation Composant Collapse pour LodgingPage*/
+.wrapperCollapses {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 5%;
+  gap: 20px;
+}
+
+.wrapperCollapses .containerCollapse {
+  max-width: 582px;
+}
+
+@media (max-width: 768px) {
   .containerInformation {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 60px;
+    display: inherit;
   }
 
-
-  /*Pour l'image seule*/
-  .containerImageSolo {
-    margin-left: 5%;
-    margin-right: 5%;
+  .wrapHostNamePictureAndRating {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     margin-top: 30px;
-    margin-bottom: 30px;
-    position: relative;
-    height: 25%; 
-  }
-  .imageWithoutIndex {
-    border-radius: 25px;
-    object-fit: cover;
-    height: 415px;
-    width: 100%;
-  }
-
-  /*Adaptation Composant Collapse pour LodgingPage*/
-  .wrapperCollapses {
-    display: flex;
+    margin-bottom: 20px;
     justify-content: space-between;
-    margin-inline: 5%;
-    gap: 20px;
   }
 
-  .wrapperCollapses .containerCollapse {
-    max-width: 582px;
-  } 
-
-  @media (max-width: 768px) {
-    .containerInformation {
-      display: inherit;
+  .wrapperCollapses {
+    flex-direction: column;
+    align-items: center;
   }
-
-    .wrapHostNamePictureAndRating {
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      margin-top: 30px;
-      margin-bottom: 20px;
-      justify-content: space-between;
-      
-    }
-
-    .wrapperCollapses {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-
-  
-  
-
+}

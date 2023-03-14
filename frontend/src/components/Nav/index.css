@@ -1,0 +1,70 @@
+.headerNav {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headerNavLinkHome {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #ff6060;
+  text-decoration: none;
+}
+
+.headerNavLinkHome:hover {
+  text-decoration-line: underline;
+}
+
+.headerNavLinkAbout {
+  margin-left: 10%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #ff6060;
+  text-decoration: none;
+}
+.headerNavLinkAbout:hover {
+  text-decoration-line: underline;
+}
+
+/*Pour le soulignage de la Nav quand on est sur la page affichée*/
+.active {
+  text-decoration: underline;
+}
+
+/*Media queries Mobiles*/
+@media (max-width: 480px) {
+  .headerNav {
+    width: 140px;
+    margin-right: 10px;
+    text-transform: uppercase;
+  }
+  .headerNavLinkHome {
+    font-size: 12px;
+  }
+  .headerNavLinkAbout {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}
+
+/*Media queries Tablettes*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .headerNavLinkHome {
+    font-size: 16px;
+  }
+  .headerNavLinkAbout {
+    font-size: 16px;
+  }
+}
