@@ -10,15 +10,15 @@ function Collapse({ title, content }) {//Props title - content dans pages About.
         {title}
         <img src={iconCollapse} className="iconOpen" alt="icône Collapse" />
       </div>
-      <div className="contentCollapse">{content}</div>
-    </div>
+      <div className="contentCollapse">{content}</div> 
+      </div>
   ) : (
     <div className="containerCollapse">
       <div className="titleCollapse" onClick={() => setIsOpen(true)}>
         {title}
         <img src={iconCollapse} className="iconClose" alt="icône Collapse" />
       </div>
-    </div>
+      </div>
   );
 }
 export default Collapse;

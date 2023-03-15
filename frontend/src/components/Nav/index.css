@@ -43,6 +43,16 @@
   text-decoration: underline;
 }
 
+/*Media queries Tablettes*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .headerNavLinkHome {
+    font-size: 16px;
+  }
+  .headerNavLinkAbout {
+    font-size: 16px;
+  }
+}
+
 /*Media queries Mobiles*/
 @media (max-width: 480px) {
   .headerNav {
@@ -56,15 +66,5 @@
   .headerNavLinkAbout {
     font-size: 12px;
     margin-left: 10px;
-  }
-}
-
-/*Media queries Tablettes*/
-@media (min-width: 481px) and (max-width: 768px) {
-  .headerNavLinkHome {
-    font-size: 16px;
-  }
-  .headerNavLinkAbout {
-    font-size: 16px;
   }
 }

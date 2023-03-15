@@ -20,3 +20,10 @@
 .footerContainer svg path {
   fill: white;
 }
+
+/*Media queries Mobiles*/
+@media (max-width: 480px) {
+  .textFooterContainer {
+    font-size: 12px;
+  }
+}

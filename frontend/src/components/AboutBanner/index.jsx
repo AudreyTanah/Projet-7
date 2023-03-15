@@ -1,4 +1,5 @@
-import img from "../../assets/backgroundAbout.png";
+
+import img from "../../assets/AboutBanner.png";
 import "../AboutBanner/index.css";
 
 function Banner() {

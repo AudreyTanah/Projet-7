@@ -1,26 +1,44 @@
 .aboutBannerImg {
     border-radius: 25px;
-    width: 100%;
     opacity: 0.8;
+    height: 223px;
+    width: 100%;
     object-fit: cover;
-    height: 100%;
 }
+
 .cardBannerImg {
     border-radius: 25px;
     background: rgba(0, 0, 0, 0.7);
+    height: 223px;
     margin-top: 30px;
+    margin-bottom: 20px;
     margin-left: 5%;
     margin-right: 5%;
     width: 100%;
+    object-fit: cover;
     position: relative;
    }
     
 .aboutBanner {
     display: flex;
     justify-content: center;
-    width: 100%;
+    
 
 }
+
+/*Media queries Mobiles*/
+@media (max-width: 480px) {
+  .cardBannerImg {
+    border-radius: 10px;
+    margin-top: 0px;
+  } 
+
+  .aboutBannerImg {
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  }
 
 
 
