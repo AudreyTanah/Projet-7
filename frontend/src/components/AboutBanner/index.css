@@ -30,7 +30,7 @@
 @media (max-width: 480px) {
   .cardBannerImg {
     border-radius: 10px;
-    margin-top: 0px;
+    margin-top: 10px;
   } 
 
   .aboutBannerImg {

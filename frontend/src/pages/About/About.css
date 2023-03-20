@@ -4,5 +4,12 @@
 }
 
 .aboutWrap {
-  flex: 1;/*pour étirer sur la page*/
+  flex: 1; /*pour étirer sur la page*/
+}
+
+/*Media queries Mobiles*/
+@media (max-width: 468px) {
+  .aboutCollapses {
+    width: 90%;
+  }
 }

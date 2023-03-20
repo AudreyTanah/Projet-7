@@ -48,4 +48,10 @@ a {
   max-width: 340px;
 }
 
+/*Media queries Mobile*/
+@media (max-width: 468px) {
+.allCards {
+  margin-top: 0px;
+}
+}
 

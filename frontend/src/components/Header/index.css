@@ -24,7 +24,7 @@
 /*Media queries Mobiles*/
 @media (max-width: 480px) {
   .headerWrap {
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
   }
 
   .logo {

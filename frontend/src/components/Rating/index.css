@@ -2,6 +2,7 @@
   width: 180px;
   display: flex;
   justify-content: flex-end;
+  margin-top: 20px;
 }
 
 .star {
@@ -12,8 +13,12 @@
 @media (max-width: 768px) {
   .containerRating {
     height: 20px;
-    justify-content: inherit;
+    justify-content: flex-start;
     margin-bottom: 0px;
+  }
+
+  .star {
+    margin-right: 2px;
   }
 }
 
@@ -22,5 +27,11 @@
   .containerRating {
     width: 100px;
     height: 15px;
+    margin-top: 0px;
   }
+
+  .star {
+    margin: 0px 2px 0px 2px;
+  }
+
 }
