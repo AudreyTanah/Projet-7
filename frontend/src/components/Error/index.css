@@ -29,6 +29,7 @@
   color: #ff6060;
 }
 
+/*Media querries Tablettes et Mobiles*/
 @media (max-width: 768px) {
   .number404 {
     font-size: 120px;

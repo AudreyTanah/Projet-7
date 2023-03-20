@@ -1,5 +1,4 @@
 .containerRating {
-  margin-top: 20px;
   width: 180px;
   display: flex;
   justify-content: flex-end;
@@ -7,4 +6,21 @@
 
 .star {
   margin-left: 10px;
+}
+
+/*Media queries Tablettes*/
+@media (max-width: 768px) {
+  .containerRating {
+    height: 20px;
+    justify-content: inherit;
+    margin-bottom: 0px;
+  }
+}
+
+/*Media queries Mobiles*/
+@media (max-width: 480px) {
+  .containerRating {
+    width: 100px;
+    height: 15px;
+  }
 }

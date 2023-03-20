@@ -39,6 +39,13 @@
   z-index: 3;
 }
 
+/*Media queries Tablettes*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .textImg {
+    font-size: 24px;
+  }
+}
+
 /*Media queries Mobiles*/
 @media (max-width: 480px) {
   .textImg {
@@ -46,9 +53,4 @@
     white-space: normal;
   }
 }
-/*Media queries Tablettes*/
-@media (min-width: 481px) and (max-width: 768px) {
-  .textImg {
-    font-size: 24px;
-  }
-}
+

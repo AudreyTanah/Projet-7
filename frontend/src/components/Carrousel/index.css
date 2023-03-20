@@ -43,9 +43,25 @@
   color: white;
 }
 
-/*Media queries Mobiles*/
+/*Media queries Tablettes et Mobiles*/
 @media (max-width: 768px) {
   .rightArrow {
     left: 85%;
+  }
+}
+
+/*Media queries Mobiles*/
+@media (max-width: 480px) {
+  .containerCarrousel svg {
+    width: 12px;
+    height: 20px;
+  }
+
+  .rightArrow {
+  left: 92%;
+  }
+
+  .index {
+    font-size: 12px;
   }
 }

@@ -60,6 +60,23 @@
   }
 }
 
+/*Media queries Tablettes*/
+@media (max-width: 768px) {
+  .titleCollapse {
+    font-size: 16px;
+  }
+
+.iconClose, .iconOpen {
+height: 20px;
+width: 15px;
+}
+
+.contentCollapse {
+  font-size: 16px;
+  padding-top: 17px;
+}
+}
+
 /*Media queries Mobiles*/
 @media (max-width: 480px) {
   .titleCollapse {

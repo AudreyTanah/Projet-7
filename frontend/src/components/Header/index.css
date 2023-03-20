@@ -9,6 +9,18 @@
   height: 68px;
 }
 
+/*Media queries Tablettes*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .headerWrap {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .logo {
+    width: 145px;
+  }
+}
+
 /*Media queries Mobiles*/
 @media (max-width: 480px) {
   .headerWrap {
@@ -20,13 +32,4 @@
   }
 }
 
-/*Media queries Tablettes*/
-@media (min-width: 481px) and (max-width: 768px) {
-  .headerWrap {
-    margin: 10px;
-  }
 
-  .logo {
-    width: 145px;
-  }
-}
