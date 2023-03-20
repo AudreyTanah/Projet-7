@@ -92,28 +92,28 @@
 }
 
 @media (max-width: 480px) {
-.titleLodging {
-  font-size: 18px;
-}
-.location  {
-  font-size: 14px;
-  margin-top: 10px;
-}
-.hostPicture {
-  width: 32px;
-  height: 32px;
-}
+  .titleLodging {
+    font-size: 18px;
+  }
+  .location {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .hostPicture {
+    width: 32px;
+    height: 32px;
+  }
 
-.hostName {
-  font-size: 12px;
-  width: 60px;
-}
-.wrapHostNamePictureAndRating {
-  margin-top: 20px;
-}
+  .hostName {
+    font-size: 12px;
+    width: 60px;
+  }
+  .wrapHostNamePictureAndRating {
+    margin-top: 20px;
+  }
 
-.containerCollapse {
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
+  .containerCollapse {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
 }

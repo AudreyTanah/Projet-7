@@ -1,4 +1,3 @@
-
 import img from "../../assets/AboutBanner.png";
 import "../AboutBanner/index.css";
 

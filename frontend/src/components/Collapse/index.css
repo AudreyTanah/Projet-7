@@ -66,15 +66,16 @@
     font-size: 16px;
   }
 
-.iconClose, .iconOpen {
-height: 20px;
-width: 15px;
-}
+  .iconClose,
+  .iconOpen {
+    height: 20px;
+    width: 15px;
+  }
 
-.contentCollapse {
-  font-size: 16px;
-  padding-top: 17px;
-}
+  .contentCollapse {
+    font-size: 16px;
+    padding-top: 17px;
+  }
 }
 
 /*Media queries Mobiles*/
@@ -83,14 +84,14 @@ width: 15px;
     font-size: 13px;
   }
 
-.iconClose, .iconOpen {
-height: 17px;
-width: 9px;
-}
+  .iconClose,
+  .iconOpen {
+    height: 17px;
+    width: 9px;
+  }
 
-.contentCollapse {
-  font-size: 12px;
-  padding-top: 17px;
-}
-
+  .contentCollapse {
+    font-size: 12px;
+    padding-top: 17px;
+  }
 }

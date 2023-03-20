@@ -48,10 +48,18 @@ a {
   max-width: 340px;
 }
 
-/*Media queries Mobile*/
-@media (max-width: 468px) {
-.allCards {
-  margin-top: 0px;
-}
-}
+/*Media queries Tablettes Mobiles*/
+@media (max-width: 756px) {
+  /*unité de mesure 756px pour être cohérent avec le site, au dessus ça prendra deux cards et +*/
+  .allCards {
+    background-color: white;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
 
+  .card,
+  a {
+   
+  }
+
+}

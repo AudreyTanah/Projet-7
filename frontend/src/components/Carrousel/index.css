@@ -51,8 +51,6 @@
   }
 }
 
-
-
 /*Media queries Mobiles*/
 @media (max-width: 480px) {
   .containerCarrousel svg {
@@ -61,13 +59,10 @@
   }
 
   .imgCarrousel {
-    width: 335px;
+    width: 100%;
     height: 255px;
     border-radius: 10px;
   }
-
- 
-  
 
   .index {
     font-size: 12px;

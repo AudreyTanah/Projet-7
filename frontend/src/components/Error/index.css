@@ -32,6 +32,14 @@
 /*Media querries Tablettes et Mobiles*/
 @media (max-width: 768px) {
   .number404 {
-    font-size: 120px;
+    font-size: 96px;
+  }
+
+  .textError {
+    font-size: 18px;
+  }
+
+  .returnHome {
+    font-size: 14px;
   }
 }
