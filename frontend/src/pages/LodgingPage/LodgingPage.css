@@ -16,6 +16,8 @@
   width: 80px;
   display: flex;
   flex-wrap: wrap;
+  text-align: right;
+  margin-right: 7px;
 }
 
 .hostPicture {
