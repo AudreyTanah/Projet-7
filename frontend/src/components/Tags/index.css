@@ -7,8 +7,7 @@
 .tag {
   margin-right: 20px;
   margin-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 3px 10px 3px 10px;
   color: white;
   width: 115px;
   height: 25px;
