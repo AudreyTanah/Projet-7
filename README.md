@@ -1,5 +1,5 @@
 # Projet-7
-Formation Développeur Web - OpenClassrooms
+Formation Développeur Intégrateur Web - OpenClassrooms
 
 Contexte :
 Kasa me recrute en tant que développeur front-end pour développer sa nouvelle plateforme web. 
